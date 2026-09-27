@@ -1,0 +1,18 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+<hibernate-mapping>
+       
+       <class name="com.hbn.learning.entity.Employee" table="Empp">
+       
+              <id name="id">
+                    <generator class="identity"></generator>
+              </id>
+              <property name="Salary"/>
+              <property name="Gender"/>
+              <property name="Name" column="EmpName"/>
+       
+       </class>
+       
+</hibernate-mapping>
